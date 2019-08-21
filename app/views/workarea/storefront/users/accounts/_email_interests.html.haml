@@ -1,0 +1,13 @@
+%tr
+  %th
+    %span= t('workarea.storefront.users.email_preferences.interests')
+  %td
+    - if @user.email_interests.present?
+      %ul.inline-list
+        - @user.email_interests.each.with_index(1) do |(_id, interest), index|
+          %li<
+            #{interest}
+            - if index != @user.email_interests.size
+              ,
+    - else
+      %p= t('workarea.storefront.users.email_preferences.none')

@@ -1,0 +1,97 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://us16.api.mailchimp.com/3.0/ecommerce/stores
+    body:
+      encoding: UTF-8
+      string: '{"id":"qa_dummy_store_9","list_id":"fcd2925136","name":"QA dummy store
+        9","email_address":"jyucis@weblinc.com","domain":"https://plugins-qa.demo.workarea.com","currency_code":"USD"}'
+    headers:
+      User-Agent:
+      - Faraday v0.15.3
+      Authorization:
+      - Basic YQo=
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Request-Id:
+      - db2bd0e0-5a8c-4d15-baa9-b738b47e104d
+      Link:
+      - <https://us16.api.mailchimp.com/schema/3.0/Ecommerce/Stores/Instance.json>;
+        rel="describedBy"
+      Vary:
+      - Accept-Encoding
+      Date:
+      - Tue, 08 Jan 2019 23:51:27 GMT
+      Content-Length:
+      - '3165'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - _AVESTA_ENVIRONMENT=prod; path=/
+      - _mcid=1.9d73500c45f102b9c461916b1af667c2; expires=Wed, 08-Jan-2020 23:51:26
+        GMT; Max-Age=31536000; path=/; domain=.mailchimp.com
+    body:
+      encoding: UTF-8
+      string: '{"id":"qa_dummy_store_9","list_id":"fcd2925136","name":"QA dummy store
+        9","platform":"","domain":"https://plugins-qa.demo.workarea.com","is_syncing":false,"email_address":"jyucis@weblinc.com","currency_code":"USD","money_format":"","primary_locale":"","timezone":"","phone":"","address":{"address1":"","address2":"","city":"","province":"","province_code":"","postal_code":"","country":"","country_code":"","longitude":0,"latitude":0},"connected_site":{"site_foreign_id":"qa_dummy_store_9","site_script":{"url":"https://chimpstatic.com/mcjs-connected/js/users/c40efe870eb1bc94745f06b1b/e89d077f314d14abffa7a031b.js","fragment":"<script
+        id=\"mcjs\">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,\"script\",\"https://chimpstatic.com/mcjs-connected/js/users/c40efe870eb1bc94745f06b1b/e89d077f314d14abffa7a031b.js\");</script>"}},"automations":{"abandoned_cart":{"is_supported":true},"abandoned_browse":{"is_supported":false}},"list_is_active":true,"created_at":"2019-01-08T23:51:26+00:00","updated_at":"2019-01-08T23:51:26+00:00","_links":[{"rel":"self","href":"https://us16.api.mailchimp.com/3.0/ecommerce/stores/qa_dummy_store_9","method":"GET","targetSchema":"https://us16.api.mailchimp.com/schema/3.0/Definitions/Ecommerce/Stores/Response.json"},{"rel":"parent","href":"https://us16.api.mailchimp.com/3.0/ecommerce/stores","method":"GET","targetSchema":"https://us16.api.mailchimp.com/schema/3.0/Definitions/Ecommerce/Stores/CollectionResponse.json"},{"rel":"update","href":"https://us16.api.mailchimp.com/3.0/ecommerce/stores/qa_dummy_store_9","method":"PATCH","targetSchema":"https://us16.api.mailchimp.com/schema/3.0/Definitions/Ecommerce/Stores/Response.json","schema":"https://us16.api.mailchimp.com/schema/3.0/Definitions/Ecommerce/Stores/PATCH.json"},{"rel":"delete","href":"https://us16.api.mailchimp.com/3.0/ecommerce/stores/qa_dummy_store_9","method":"DELETE"},{"rel":"customers","href":"https://us16.api.mailchimp.com/3.0/ecommerce/stores/qa_dummy_store_9/customers","method":"GET","targetSchema":"https://us16.api.mailchimp.com/schema/3.0/Definitions/Ecommerce/Stores/Customers/CollectionResponse.json"},{"rel":"products","href":"https://us16.api.mailchimp.com/3.0/ecommerce/stores/qa_dummy_store_9/products","method":"GET","targetSchema":"https://us16.api.mailchimp.com/schema/3.0/Definitions/Ecommerce/Stores/Products/CollectionResponse.json"},{"rel":"promo-rules","href":"https://us16.api.mailchimp.com/3.0/ecommerce/stores/qa_dummy_store_9/promo-rules","method":"GET","targetSchema":"https://us16.api.mailchimp.com/schema/3.0/Definitions/Ecommerce/Stores/Promorules/CollectionResponse.json"},{"rel":"orders","href":"https://us16.api.mailchimp.com/3.0/ecommerce/stores/qa_dummy_store_9/orders","method":"GET","targetSchema":"https://us16.api.mailchimp.com/schema/3.0/Definitions/Ecommerce/Stores/Orders/CollectionResponse.json"},{"rel":"carts","href":"https://us16.api.mailchimp.com/3.0/ecommerce/stores/qa_dummy_store_9/carts","method":"GET","targetSchema":"https://us16.api.mailchimp.com/schema/3.0/Definitions/Ecommerce/Stores/Carts/CollectionResponse.json"}]}'
+    http_version: 
+  recorded_at: Tue, 08 Jan 2019 23:51:27 GMT
+- request:
+    method: post
+    uri: https://us16.api.mailchimp.com/3.0/connected-sites/qa_dummy_store_9/actions/verify-script-installation
+    body:
+      encoding: UTF-8
+      string: 'null'
+    headers:
+      User-Agent:
+      - Faraday v0.15.3
+      Authorization:
+      - Basic YQo=
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      Server:
+      - openresty
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '0'
+      X-Request-Id:
+      - e8896233-cd8e-4022-8b55-a1a6afe41bfc
+      Date:
+      - Tue, 08 Jan 2019 23:51:27 GMT
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - _AVESTA_ENVIRONMENT=prod; path=/
+      - _mcid=1.221566d4d36767f01c6594e04ca14ad7; expires=Wed, 08-Jan-2020 23:51:27
+        GMT; Max-Age=31536000; path=/; domain=.mailchimp.com
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Tue, 08 Jan 2019 23:51:27 GMT
+recorded_with: VCR 2.9.3

@@ -1,0 +1,8 @@
+inherit_from: .rails-rubocop.yml
+
+AllCops:
+  TargetRubyVersion: 2.4
+  Exclude:
+    - 'lib/mail_chimp.rb'
+    - 'lib/mail_chimp/**/*'
+    - 'test/dummy/**/*'

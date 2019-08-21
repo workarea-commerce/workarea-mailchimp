@@ -1,0 +1,16 @@
+module Workarea
+  decorate Storefront::UserViewModel, with: :mail_chimp do
+    def has_email_interest?(interest)
+      return false if model.groups.empty?
+      email_interests.find { |id, int| int == interest }
+    end
+
+    def email_interests
+      model.groups.map(&:interests).inject(&:merge)
+    end
+
+    def email_signup?
+      model.email_signup || super
+    end
+  end
+end

@@ -1,0 +1,15 @@
+en:
+  workarea:
+    storefront:
+      users:
+        edit:
+          subscribe_to_emails: Subscribe to Emails
+          email_interests: Email Interests
+        email_preferences:
+          email_subscriptions: Email Subscriptions
+          interests: Interests
+          none: None
+          subscribed: Subscribed
+          unsubscribe: Unsubscribe
+          unsubscribed: Unsubscribed
+          update_interests: Update Interests

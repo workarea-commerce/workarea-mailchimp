@@ -1,0 +1,13 @@
+module Workarea
+  decorate Storefront::Checkout::ShippingController, with: :mail_chimp do
+    decorated do
+      after_action :sync_with_mailchimp, only: [:update_shipping]
+    end
+
+    private
+
+    def sync_with_mailchimp
+      Workarea::MailChimp::Ecommerce::SaveCart.perform_async(current_order.id)
+    end
+  end
+end

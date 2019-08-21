@@ -1,0 +1,7 @@
+module Workarea
+  decorate Catalog::Product, with: :mail_chimp do
+    decorated do
+      field :exported_to_mail_chimp_at, type: Time
+    end
+  end
+end

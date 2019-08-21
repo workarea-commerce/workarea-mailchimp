@@ -1,0 +1,12 @@
+.email-interest-group
+- if @email_interests.present?
+  %p.email-interest-group__heading= t('workarea.storefront.users.edit.email_interests')
+  - @email_interests.each do |group|
+    %p.email-interest-group__sub-heading= group["name"]
+    - group.interests.each do |id, interest|
+      .button-property
+        .value= check_box_tag "groups[][interests][#{id}]", interest, @user.has_email_interest?(interest)
+        = label_tag "groups[][interests][#{id}]", nil, class: 'button-property__name' do
+          %span.text= interest
+    = hidden_field_tag 'groups[][id]', group._id if group._id.present?
+    = hidden_field_tag 'groups[][name]', group.name if group.name.present?

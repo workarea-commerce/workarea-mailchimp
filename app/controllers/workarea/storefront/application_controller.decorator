@@ -1,0 +1,11 @@
+module Workarea
+  module Storefront
+    decorate ApplicationController, with: :mail_chimp do
+      def current_order
+        super.tap do |order|
+          order.mail_chimp_campaign_id = cookies[:mc_cid]
+        end
+      end
+    end
+  end
+end

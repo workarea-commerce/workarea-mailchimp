@@ -1,0 +1,31 @@
+module Workarea
+  decorate User, with: :mail_chimp do
+    class_methods do
+      def default_groups
+        Workarea::MailChimp.gateway.interests
+      end
+    end
+
+    decorated do
+      before_validation :check_email_signup
+      before_save :default_groups_if_empty
+
+      field :email_signup, type: Boolean, default: false
+      embeds_many :groups, class_name: "Workarea::MailChimp::Group"
+    end
+
+    private
+
+      def check_email_signup
+        self.email_signup ||= Workarea::Email.signed_up?(self.email)
+      end
+
+      def default_groups_if_empty
+        return unless has_attribute?("email_signup")
+
+        if self.groups.empty? && self.email_signup?
+          self.groups = User.default_groups
+        end
+      end
+  end
+end

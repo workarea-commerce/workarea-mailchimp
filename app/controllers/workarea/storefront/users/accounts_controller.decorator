@@ -1,0 +1,37 @@
+module Workarea
+  decorate Storefront::Users::AccountsController, with: :mail_chimp do
+    decorated { before_action :set_email_interests, only: :edit }
+
+    private
+
+    def user_params
+      @user_params ||= super
+        .merge(params.permit(:email_signup, :groups))
+        .merge(sanitize_groups_param(params))
+    end
+
+    def sanitize_groups_param(params)
+      @sanitize_groups_param ||= Hash[
+        :groups,
+        params.fetch(:groups, []).map do |group|
+          {
+            _id: group[:id],
+            name: group[:name],
+            interests: group[:interests].to_unsafe_hash
+          }
+        end
+      ]
+    end
+
+    def set_email_interests
+      key = "mail_chimp_email_interests/#{Workarea::MailChimp.config.default_store[:list_id]}"
+      options = { expires_in: 1.hour }
+
+      options.merge!(force: true) if Rails.cache.read(key).nil?
+
+      @email_interests = Rails.cache.fetch(key, options) do
+        Workarea::MailChimp.gateway.list.interests
+      end
+    end
+  end
+end

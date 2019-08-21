@@ -1,0 +1,18 @@
+module Workarea
+  decorate Storefront::CartItemsController, with: :mail_chimp do
+    decorated do
+      after_action :sync_with_mailchimp, only: [:create, :update]
+    end
+
+    def destroy
+      super
+      Workarea::MailChimp::Ecommerce::SaveCart.perform_async(current_order.id, deleted_item_id: params[:id])
+    end
+
+    private
+
+    def sync_with_mailchimp
+      Workarea::MailChimp::Ecommerce::SaveCart.perform_async(current_order.id, { })
+    end
+  end
+end

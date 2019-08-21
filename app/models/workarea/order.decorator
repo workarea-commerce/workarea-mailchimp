@@ -1,0 +1,9 @@
+module Workarea
+  decorate Order, with: :mail_chimp do
+    decorated do
+      field :mail_chimp_campaign_id, type: String
+      field :exported_to_mail_chimp_at, type: Time
+      field :cart_exported_to_mail_chimp_at, type: Time
+    end
+  end
+end
