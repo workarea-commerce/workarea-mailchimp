@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.version     = Workarea::MailChimp::VERSION
   s.authors     = ["Mark Platt", "Mike Dalton"]
   s.email       = ["mplatt@weblinc.com", "mdalton@weblinc.com"]
-  s.homepage    = "http://www.workarea.com"
+  s.homepage    = "https://github.com/workarea-commerce/workarea-mailchimp"
   s.summary     = "MailChimp plugin for the Workarea ecommerce platform"
   s.description = "Rails Engine for MailChimp integrations"
 

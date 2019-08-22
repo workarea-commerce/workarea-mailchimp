@@ -2,7 +2,7 @@ source "https://rubygems.org"
 
 gemspec
 
-gem "workarea", source: "https://gems.weblinc.com"
+gem "workarea"
 
 group :test, :development do
   gem "simplecov", require: false
