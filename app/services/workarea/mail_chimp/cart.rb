@@ -50,7 +50,7 @@ module Workarea
         end
 
         def payment
-          @payment ||=  Workarea::Payment.find(order.id)
+          @payment ||= Workarea::Payment.find(order.id)
         end
 
         # order items. Mailchimp refers to them as "lines"
@@ -67,7 +67,7 @@ module Workarea
         end
 
         def payment
-          @payment ||=  Workarea::Payment.find(order.id)
+          @payment ||= Workarea::Payment.find(order.id)
         end
 
         def send_full_customer?

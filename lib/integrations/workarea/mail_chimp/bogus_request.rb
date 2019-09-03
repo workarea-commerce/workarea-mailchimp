@@ -1,7 +1,6 @@
 module Workarea
   module MailChimp
     class BogusRequest
-
       def initialize(*)
         @path_parts = []
       end

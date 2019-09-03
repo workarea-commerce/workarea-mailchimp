@@ -1,7 +1,6 @@
 module Workarea
   module MailChimp
     class Address
-
       attr_reader :address, :options
 
       def initialize(address, options = {})

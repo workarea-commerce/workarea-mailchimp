@@ -28,7 +28,7 @@ module Workarea
       private
 
         def variants
-          @variants ||= product.variants.map{ |v| Variant.new(v).to_h }
+          @variants ||= product.variants.map { |v| Variant.new(v).to_h }
         end
 
         def primary_image

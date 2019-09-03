@@ -2,7 +2,6 @@ require 'test_helper'
 
 module Workarea
   class MailChimp::Ecommerce::SaveCartTest < TestCase
-
     def test_cart_mail_chimp_exported_timestamp
       order = create_placed_order
       order.placed_at = nil
