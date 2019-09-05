@@ -1,7 +1,6 @@
 module Workarea
   module MailChimp
     class BogusAPIRequest
-
       def initialize(builder: nil)
         @request_builder = builder
       end

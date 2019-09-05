@@ -1,7 +1,7 @@
 module Workarea
   module MailChimp
     class Gateway::Members < Gateway
-      def initialize( default_list_id)
+      def initialize(default_list_id)
         @default_list_id = default_list_id
       end
 

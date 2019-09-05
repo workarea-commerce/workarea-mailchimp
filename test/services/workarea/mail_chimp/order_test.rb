@@ -22,15 +22,15 @@ module Workarea
       private
         def expected_address_hash
           {
-            name:"Ben Crouse",
-            address1:"22 S. 3rd St.",
-            address2:"Second Floor",
-            city:"Philadelphia",
-            province:"PA",
-            postal_code:"19106",
-            country:"US",
-            phone:"",
-            company:""
+            name: "Ben Crouse",
+            address1: "22 S. 3rd St.",
+            address2: "Second Floor",
+            city: "Philadelphia",
+            province: "PA",
+            postal_code: "19106",
+            country: "US",
+            phone: "",
+            company: ""
           }
         end
 
