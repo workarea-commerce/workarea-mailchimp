@@ -10,7 +10,7 @@ http_interactions:
       User-Agent:
       - Faraday v0.15.4
       Authorization:
-      - Basic YQo=
+      - Basic Yzg5NTgzYzJiMjM4ZDdhYWE2ZGYzZTQzMDdiYjY4YzEtdXMxNg==
       Content-Type:
       - application/json
       Accept-Encoding:
@@ -59,7 +59,7 @@ http_interactions:
       User-Agent:
       - Faraday v0.15.4
       Authorization:
-      - Basic YQo=
+      - Basic Yzg5NTgzYzJiMjM4ZDdhYWE2ZGYzZTQzMDdiYjY4YzEtdXMxNg==
       Content-Type:
       - application/json
       Accept-Encoding:
@@ -109,7 +109,7 @@ http_interactions:
       User-Agent:
       - Faraday v0.15.4
       Authorization:
-      - Basic YQo=
+      - Basic Yzg5NTgzYzJiMjM4ZDdhYWE2ZGYzZTQzMDdiYjY4YzEtdXMxNg==
       Content-Type:
       - application/json
       Accept-Encoding:
@@ -160,7 +160,7 @@ http_interactions:
       User-Agent:
       - Faraday v0.15.4
       Authorization:
-      - Basic YQo=
+      - Basic Yzg5NTgzYzJiMjM4ZDdhYWE2ZGYzZTQzMDdiYjY4YzEtdXMxNg==
       Content-Type:
       - application/json
       Accept-Encoding:
@@ -208,7 +208,7 @@ http_interactions:
       User-Agent:
       - Faraday v0.15.4
       Authorization:
-      - Basic YQo=
+      - Basic Yzg5NTgzYzJiMjM4ZDdhYWE2ZGYzZTQzMDdiYjY4YzEtdXMxNg==
       Content-Type:
       - application/json
       Accept-Encoding:
@@ -259,7 +259,7 @@ http_interactions:
       User-Agent:
       - Faraday v0.15.4
       Authorization:
-      - Basic YQo=
+      - Basic Yzg5NTgzYzJiMjM4ZDdhYWE2ZGYzZTQzMDdiYjY4YzEtdXMxNg==
       Content-Type:
       - application/json
       Accept-Encoding:
@@ -302,7 +302,7 @@ http_interactions:
       User-Agent:
       - Faraday v0.15.4
       Authorization:
-      - Basic YQo=
+      - Basic Yzg5NTgzYzJiMjM4ZDdhYWE2ZGYzZTQzMDdiYjY4YzEtdXMxNg==
       Content-Type:
       - application/json
       Accept-Encoding:
@@ -345,7 +345,7 @@ http_interactions:
       User-Agent:
       - Faraday v0.15.4
       Authorization:
-      - Basic YQo=
+      - Basic Yzg5NTgzYzJiMjM4ZDdhYWE2ZGYzZTQzMDdiYjY4YzEtdXMxNg==
       Content-Type:
       - application/json
       Accept-Encoding:
