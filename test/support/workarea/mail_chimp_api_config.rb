@@ -7,7 +7,7 @@ module Workarea
     end
 
     def set_key
-      Rails.application.secrets.mail_chimp = { api_key: 'a' }
+      Rails.application.secrets.mail_chimp = { api_key: 'c89583c2b238d7aaa6df3e4307bb68c1-us16' }
     end
 
     def reset_key

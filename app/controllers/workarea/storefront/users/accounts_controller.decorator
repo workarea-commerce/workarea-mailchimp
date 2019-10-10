@@ -17,7 +17,7 @@ module Workarea
           {
             _id: group[:id],
             name: group[:name],
-            interests: group[:interests].to_unsafe_hash
+            interests: group[:interests]&.to_unsafe_hash || {}
           }
         end
       ]
