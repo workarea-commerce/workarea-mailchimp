@@ -1,3 +1,26 @@
+Workarea Mail Chimp 3.0.3 (2019-10-16)
+--------------------------------------------------------------------------------
+
+*   Fix MailChimp Test Credentials
+
+    Update the MailChimp API Key to properly pass the client-side validation
+    that prevents `Gibbon` from making the calls needed in the tests for
+    MailChimp. Previously, this was a scrubbed credential and was one
+    character, which apparently doesn't fly for MailChimp and it caused the
+    client to block sending out requests, which was the reason behind the
+    tests failing. The API Key has been regenerated with a
+    `SecureRandom.hex` string and properly base64-encoded into the VCR
+    cassettes, which allow the tests to pass now.
+
+    MAILCHIMP-1
+    Tom Scott
+
+*   Update README
+
+    Matt Duffy
+
+
+
 Workarea Mail Chimp 3.0.3 (2019-08-22)
 --------------------------------------------------------------------------------
 
