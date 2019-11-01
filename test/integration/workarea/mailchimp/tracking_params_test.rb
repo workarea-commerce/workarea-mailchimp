@@ -1,7 +1,7 @@
 require "test_helper"
 
 module Workarea
-  class MailChimp::SubscriptionTest < Workarea::IntegrationTest
+  class MailChimp::TrackingParamsTest < Workarea::IntegrationTest
     setup :set_inventory
     setup :set_product
 
