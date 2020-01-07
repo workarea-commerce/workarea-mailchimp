@@ -1,3 +1,20 @@
+Workarea Mail Chimp 3.0.5 (2019-11-12)
+--------------------------------------------------------------------------------
+
+*   Fix Test Class Name
+
+    This test class was mistakenly named `SubscriptionTest`, which caused
+    conflicts with the existing `SubscriptionTest` and erratic test failures
+    for users of the plugin. Update the class name to reflect the name of
+    the file it exists in, both to make it decoratable and to fix the
+    inconsistent setup code that was being loaded for its tests, causing the
+    intermittent test failures.
+
+    MAILCHIMP-2
+    Tom Scott
+
+
+
 Workarea Mail Chimp 3.0.3 (2019-10-16)
 --------------------------------------------------------------------------------
 
