@@ -23,7 +23,7 @@ Add the gem to your application's Gemfile:
 
 ```ruby
 # ...
-gem 'workarea-mailchimp'
+gem 'workarea-mail_chimp'
 # ...
 ```
 
