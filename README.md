@@ -37,6 +37,15 @@ cd path/to/application
 bundle
 ```
 
+After deploying for the first time, run this on your production server
+to seed products/orders into MailChimp:
+
+```bash
+rails workarea:mail_chimp:install
+```
+
+Additional tasks can be discovered by running `rails --tasks`.
+
 Configuration
 --------------------------------------------------------------------------------
 
